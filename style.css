@@ -85,7 +85,9 @@ input[type="submit"] {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .main-container {
-    display: flex;
+  .girl {
+    float: right;
+    width: 600px;
+    clip-path: polygon(0 0, 100% 1%, 100% 100%, 38% 100%);
   }
 }
