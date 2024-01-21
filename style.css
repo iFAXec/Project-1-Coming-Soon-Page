@@ -7,10 +7,17 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: AdiHaus;
 }
+
+.main-container {
+  padding: 10px 80px;
+}
+
 .logo {
   display: block;
   margin: auto;
+  padding-bottom: 5%;
 }
+
 .girl {
   width: 100%;
 }
@@ -18,23 +25,29 @@ body {
   font-family: AdiHaus;
   src: url("https://assets.codepen.io/6060109/adihaus_regular.ttf");
 }
+
+h2 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 4px;
+}
 .main {
   color: rgb(205, 58, 36);
-
+  font-weight: 400;
   text-align: center;
-  margin: 2%;
-  font-size: 48px;
 }
+
 .sub {
   text-align: center;
-  font-weight: bolder;
-  font-size: 48px;
-  color: rgb(66, 58, 58);
+  font-weight: 700;
+  color: #423a3a;
 }
+
 .content-container {
   padding: 2%;
   margin: auto;
 }
+
 .text-container {
   text-align: center;
   line-height: 28px;
@@ -63,8 +76,8 @@ input[type="submit"] {
   font-size: 15px;
   box-shadow: rgba(66, 58, 58, 0.15) 0px 15px 20px 0px;
 }
-@media only screen and (min-width: 992px) {
-  body {
+@media only screen and (min-width: 768px) {
+  /* body {
     outline: 1px solid red;
   }
 
@@ -75,6 +88,20 @@ input[type="submit"] {
   }
 
   .logo {
-    margin: 5% 0 0 10%;
+    margin: 5% 0 10% 10%;
   }
+  .main {
+    text-align: justify;
+    margin: 0 10%;
+  }
+  .sub {
+    display: flex;
+    margin: 0 10%;
+    padding-top: 0;
+    position: relative;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  } */
 }
