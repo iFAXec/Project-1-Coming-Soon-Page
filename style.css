@@ -3,6 +3,12 @@
   margin: 0px;
   padding: 0px;
 }
+
+@font-face {
+  font-family: AdiHaus;
+  src: url("https://assets.codepen.io/6060109/adihaus_regular.ttf");
+}
+
 body {
   background-color: rgb(255, 255, 255);
   font-family: AdiHaus;
@@ -14,16 +20,12 @@ body {
 
 .logo {
   display: block;
-  margin: auto;
+  margin: 3% auto 0;
   padding-bottom: 5%;
 }
 
-.girl {
+.athlete {
   width: 100%;
-}
-@font-face {
-  font-family: AdiHaus;
-  src: url("https://assets.codepen.io/6060109/adihaus_regular.ttf");
 }
 
 h2 {
@@ -76,11 +78,31 @@ input[type="submit"] {
   font-size: 15px;
   box-shadow: rgba(66, 58, 58, 0.15) 0px 15px 20px 0px;
 }
+
 @media only screen and (min-width: 768px) {
-  /* body {
-    outline: 1px solid red;
+  .athlete {
+    display: none;
+  }
+  .logo {
+    margin: 0;
   }
 
+  body {
+    display: flex;
+  }
+
+  .main-container {
+    width: 50%;
+    background-color: tomato;
+  }
+
+  .desktop-image {
+    background: lightblue
+      url("https://assets.codepen.io/6060109/athlete-big.png") no-repeat center;
+    width: 50%;
+  }
+
+  /*
   .girl {
     float: right;
     width: 600px;
