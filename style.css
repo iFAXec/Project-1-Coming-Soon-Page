@@ -24,7 +24,7 @@ body {
   padding-bottom: 5%;
 }
 
-.athlete {
+.athlete-mobile {
   width: 100%;
 }
 
@@ -81,28 +81,34 @@ input[type="submit"] {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  * {
-    box-sizing: content-box;
-  }
-
-  .athlete {
+  .athlete-mobile {
     display: none;
-  }
-
-  .logo {
-    margin: 5% 15%;
-  }
-
-  h2 {
-    margin: 0;
   }
 
   body {
     display: flex;
   }
 
-  .main-container {
+  .all-container {
     width: 50%;
+  }
+
+  .main,
+  .sub,
+  .text-container {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 64px;
+  }
+
+  .logo {
+    margin: 10% 18% 20%;
+  }
+
+  p {
+    font-size: 16px;
   }
 
   .desktop-image {
