@@ -5,13 +5,31 @@
 }
 
 @font-face {
-  font-family: AdiHaus;
-  src: url("https://assets.codepen.io/6060109/adihaus_regular.ttf");
+  font-family: "AdiHaus";
+  src: URL("https://assets.codepen.io/6060109/adihaus_regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-image: url("https://assets.codepen.io/6060109/waves.png");
   font-family: AdiHaus;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.all-container {
+  max-width: 459px;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -24,7 +42,7 @@ body {
   padding-bottom: 5%;
 }
 
-.athlete-mobile {
+.shoes-mobile {
   width: 100%;
 }
 
@@ -33,8 +51,9 @@ h2 {
   font-size: 48px;
   letter-spacing: 4px;
 }
+
 .main {
-  color: rgb(205, 58, 36);
+  color: #2f80ed;
   font-weight: 400;
   text-align: center;
 }
@@ -61,19 +80,28 @@ h2 {
 .input-container input[type="submit"] {
   height: 48px;
 }
+
 .input-container input[type="submit"] {
   width: 64px;
 }
+
 .input-container input[type="text"] {
   padding: 0px 10px;
 }
+
 form {
   display: flex;
   justify-content: center;
   margin-top: 10%;
 }
+
 input[type="submit"] {
-  background: rgb(51, 51, 51);
+  background: rgb(124, 124, 124);
+  background: linear-gradient(
+    90deg,
+    rgba(124, 124, 124, 1) 0%,
+    rgba(43, 40, 40, 1) 100%
+  );
   color: white;
   font-size: 15px;
   box-shadow: rgba(66, 58, 58, 0.15) 0px 15px 20px 0px;
@@ -81,7 +109,7 @@ input[type="submit"] {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .athlete-mobile {
+  .shoes-mobile {
     display: none;
   }
 
@@ -91,6 +119,7 @@ input[type="submit"] {
 
   .all-container {
     width: 50%;
+    max-width: 650px;
   }
 
   .main,
@@ -104,18 +133,21 @@ input[type="submit"] {
   }
 
   .logo {
-    margin: 10% 18% 20%;
+    margin: 10% 13% 20%;
   }
 
   p {
     font-size: 16px;
   }
 
+  form {
+    justify-content: flex-start;
+  }
+
   .desktop-image {
-    background: lightblue
-      url("https://assets.codepen.io/6060109/athlete-big.png") no-repeat center;
+    background: lightblue url("https://assets.codepen.io/6060109/shoes.png")
+      no-repeat center;
     background-size: cover;
     width: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 100%);
   }
 }
